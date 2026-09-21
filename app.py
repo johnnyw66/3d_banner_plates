@@ -8,6 +8,8 @@ from typing import Literal
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import HTMLResponse, Response
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
+
 from build123d import (
     Align,
     Axis,
@@ -28,6 +30,11 @@ app = FastAPI(title="3D Text Banner Generator")
 BASE_DIR = Path(__file__).resolve().parent
 FONTS_DIR = BASE_DIR / "fonts"
 FONTS_DIR.mkdir(exist_ok=True)
+
+STATIC_DIR = BASE_DIR / "static"
+STATIC_DIR.mkdir(exist_ok=True)
+app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 

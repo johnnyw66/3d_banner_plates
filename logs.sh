@@ -1,0 +1,3 @@
+
+docker logs banner-gen
+
