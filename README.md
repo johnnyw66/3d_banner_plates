@@ -1,6 +1,6 @@
 ## 3D Text Banner Generator Service
 
-A containerised parametric 3D CAD service powered by **FastAPI**, **`build123d`**, and **Three.js**. It generates watertight, 3D-printable binary STL plates with solid or outlined text directly from TrueType (`.ttf`) and OpenType (`.otf`) fonts.
+A containerised parametric 3D CAD service powered by **FastAPI**, **`build123d`**, and **Three.js**. It generates 3D-printable binary STL plates with solid or outlined text directly from TrueType (`.ttf`) and OpenType (`.otf`) fonts.
 
 ---
 
