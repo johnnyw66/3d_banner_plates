@@ -13,6 +13,10 @@ banner_service/
 ├── Dockerfile
 ├── requirements.txt
 ├── app.py
+├── static/
+│   └── STLLoader.js
+|   |__ OrbitControls.js
+|   |__ three.module.js      
 ├── fonts/
 │   └── Roboto-Bold.ttf      # At least one default font
 └── templates/
