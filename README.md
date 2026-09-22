@@ -138,3 +138,15 @@ docker stop banner-gen && docker rm banner-gen
 docker build --no-cache -t text-banner-service .
 docker run -d -p 8000:8000 --name banner-gen -v "$(pwd)/fonts:/app/fonts" text-banner-service
 ```
+
+
+### Colour changes on Single Filament 
+Import STL with plate and text into BambuStudio. Under preview - move slider on layer widget until the text appears.
+Add Custom G-Code (<CONTROL> and Click on '+' 
+
+
+```
+M400 U1 ; Pause and prompt for manual filament swap
+```
+You can also add in a Filament change - which will give you a preview of your colour print.
+
